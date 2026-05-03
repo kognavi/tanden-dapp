@@ -1,0 +1,184 @@
+{
+  "address": "0x489CFa5FeE93a96782E95558fCFc19486605455D",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ReentrancyGuardReentrantCall",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBankBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xf42c15c7d39e5d89d9e8e3cc8ec975efda32d53c3686827237a6b07968452a4d",
+  "receipt": {
+    "to": null,
+    "from": "0x430448c237BdCA91D87b4ae2859d774e9f0fE1D5",
+    "contractAddress": "0x489CFa5FeE93a96782E95558fCFc19486605455D",
+    "transactionIndex": 15,
+    "gasUsed": "260500",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xdd802c22c484e5d0f11f7c72ad9b78c056fbc3bcdf3977f510c10d217b24845d",
+    "transactionHash": "0xf42c15c7d39e5d89d9e8e3cc8ec975efda32d53c3686827237a6b07968452a4d",
+    "logs": [],
+    "blockNumber": 10510701,
+    "cumulativeGasUsed": "9256466",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7bba4fb86cecf476665084fdb6d038b2",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"ReentrancyGuardReentrantCall\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBankBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"\\u30ea\\u30a8\\u30f3\\u30c8\\u30e9\\u30f3\\u30b7\\u30fc\\u653b\\u6483\\u5bfe\\u7b56\\u6e08\\u307f\\u306e\\u5b89\\u5168\\u306a\\u9280\\u884c\\u30b3\\u30f3\\u30c8\\u30e9\\u30af\\u30c8\",\"errors\":{\"ReentrancyGuardReentrantCall()\":[{\"details\":\"Unauthorized reentrant call.\"}]},\"kind\":\"dev\",\"methods\":{},\"title\":\"TandenBank\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deposit()\":{\"notice\":\"ETH\\u3092\\u9810\\u3051\\u308b\\u95a2\\u6570\"},\"getBankBalance()\":{\"notice\":\"\\u30b3\\u30f3\\u30c8\\u30e9\\u30af\\u30c8\\u304c\\u6301\\u3063\\u3066\\u3044\\u308b\\u7dcfETH\\u91cf\\u3092\\u78ba\\u8a8d\\u3059\\u308b\\u95a2\\u6570\"},\"withdraw()\":{\"notice\":\"\\u9810\\u3051\\u305fETH\\u3092\\u5168\\u984d\\u5f15\\u304d\\u51fa\\u3059\\u95a2\\u6570 \\ud83d\\udee1\\ufe0f nonReentrant\\u4fee\\u98fe\\u5b50\\u3092\\u3064\\u3051\\u3066\\u518d\\u5165\\u653b\\u6483\\u3092\\u30d6\\u30ed\\u30c3\\u30af\\uff01\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TandenBank.sol\":\"TandenBank\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v5.0.0) (utils/ReentrancyGuard.sol)\\n\\npragma solidity ^0.8.20;\\n\\n/**\\n * @dev Contract module that helps prevent reentrant calls to a function.\\n *\\n * Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier\\n * available, which can be applied to functions to make sure there are no nested\\n * (reentrant) calls to them.\\n *\\n * Note that because there is a single `nonReentrant` guard, functions marked as\\n * `nonReentrant` may not call one another. This can be worked around by making\\n * those functions `private`, and then adding `external` `nonReentrant` entry\\n * points to them.\\n *\\n * TIP: If you would like to learn more about reentrancy and alternative ways\\n * to protect against it, check out our blog post\\n * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].\\n */\\nabstract contract ReentrancyGuard {\\n    // Booleans are more expensive than uint256 or any type that takes up a full\\n    // word because each write operation emits an extra SLOAD to first read the\\n    // slot's contents, replace the bits taken up by the boolean, and then write\\n    // back. This is the compiler's defense against contract upgrades and\\n    // pointer aliasing, and it cannot be disabled.\\n\\n    // The values being non-zero value makes deployment a bit more expensive,\\n    // but in exchange the refund on every call to nonReentrant will be lower in\\n    // amount. Since refunds are capped to a percentage of the total\\n    // transaction's gas, it is best to keep them low in cases like this one, to\\n    // increase the likelihood of the full refund coming into effect.\\n    uint256 private constant NOT_ENTERED = 1;\\n    uint256 private constant ENTERED = 2;\\n\\n    uint256 private _status;\\n\\n    /**\\n     * @dev Unauthorized reentrant call.\\n     */\\n    error ReentrancyGuardReentrantCall();\\n\\n    constructor() {\\n        _status = NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Prevents a contract from calling itself, directly or indirectly.\\n     * Calling a `nonReentrant` function from another `nonReentrant`\\n     * function is not supported. It is possible to prevent this from happening\\n     * by making the `nonReentrant` function external, and making it call a\\n     * `private` function that does the actual work.\\n     */\\n    modifier nonReentrant() {\\n        _nonReentrantBefore();\\n        _;\\n        _nonReentrantAfter();\\n    }\\n\\n    function _nonReentrantBefore() private {\\n        // On the first call to nonReentrant, _status will be NOT_ENTERED\\n        if (_status == ENTERED) {\\n            revert ReentrancyGuardReentrantCall();\\n        }\\n\\n        // Any calls to nonReentrant after this point will fail\\n        _status = ENTERED;\\n    }\\n\\n    function _nonReentrantAfter() private {\\n        // By storing the original value once again, a refund is triggered (see\\n        // https://eips.ethereum.org/EIPS/eip-2200)\\n        _status = NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Returns true if the reentrancy guard is currently set to \\\"entered\\\", which indicates there is a\\n     * `nonReentrant` function in the call stack.\\n     */\\n    function _reentrancyGuardEntered() internal view returns (bool) {\\n        return _status == ENTERED;\\n    }\\n}\\n\",\"keccak256\":\"0xf980daa263b661ab8ddee7d4fd833c7da7e7995e2c359ff1f17e67e4112f2236\",\"license\":\"MIT\"},\"contracts/TandenBank.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity >=0.8.0 <0.9.0;\\n\\n// \\ud83d\\udee1\\ufe0f OpenZeppelin\\u306eReentrancyGuard\\u3092\\u30a4\\u30f3\\u30dd\\u30fc\\u30c8\\uff08Scaffold-ETH 2\\u306b\\u306f\\u6700\\u521d\\u304b\\u3089\\u5165\\u3063\\u3066\\u308b\\u3088\\uff01\\uff09\\nimport \\\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\\\";\\n\\n\\n/**\\n * @title TandenBank\\n * @dev \\u30ea\\u30a8\\u30f3\\u30c8\\u30e9\\u30f3\\u30b7\\u30fc\\u653b\\u6483\\u5bfe\\u7b56\\u6e08\\u307f\\u306e\\u5b89\\u5168\\u306a\\u9280\\u884c\\u30b3\\u30f3\\u30c8\\u30e9\\u30af\\u30c8\\n */\\ncontract TandenBank is ReentrancyGuard {\\n    // \\u30e6\\u30fc\\u30b6\\u30fc\\u3054\\u3068\\u306e\\u9810\\u91d1\\u6b8b\\u9ad8\\u3092\\u8a18\\u9332\\u3059\\u308b\\u30de\\u30c3\\u30d4\\u30f3\\u30b0\\n    mapping(address => uint256) public balances;\\n\\n    // \\u9810\\u91d1\\u30fb\\u5f15\\u304d\\u51fa\\u3057\\u6642\\u306b\\u30d5\\u30ed\\u30f3\\u30c8\\u30a8\\u30f3\\u30c9\\u306b\\u901a\\u77e5\\u3092\\u9001\\u308b\\u30a4\\u30d9\\u30f3\\u30c8\\n    event Deposit(address indexed user, uint256 amount);\\n    event Withdraw(address indexed user, uint256 amount);\\n\\n    /**\\n     * @notice ETH\\u3092\\u9810\\u3051\\u308b\\u95a2\\u6570\\n     */\\n    function deposit() public payable {\\n        require(msg.value > 0, \\\"Must deposit more than 0 ETH\\\");\\n        \\n        balances[msg.sender] += msg.value;\\n        \\n        emit Deposit(msg.sender, msg.value);\\n    }\\n\\n    /**\\n     * @notice \\u9810\\u3051\\u305fETH\\u3092\\u5168\\u984d\\u5f15\\u304d\\u51fa\\u3059\\u95a2\\u6570\\n     * \\ud83d\\udee1\\ufe0f nonReentrant\\u4fee\\u98fe\\u5b50\\u3092\\u3064\\u3051\\u3066\\u518d\\u5165\\u653b\\u6483\\u3092\\u30d6\\u30ed\\u30c3\\u30af\\uff01\\n     */\\n    function withdraw() public nonReentrant {\\n        uint256 bal = balances[msg.sender];\\n        require(bal > 0, \\\"No balance to withdraw\\\");\\n\\n        // \\ud83d\\udee1\\ufe0f Checks-Effects-Interactions\\u30d1\\u30bf\\u30fc\\u30f3\\uff1a\\u9001\\u91d1\\u524d\\u306b\\u6b8b\\u9ad8\\u30920\\u306b\\u3059\\u308b\\uff01\\n        balances[msg.sender] = 0;\\n\\n        // \\u5916\\u90e8\\u3078\\u306e\\u9001\\u91d1\\uff08\\u3053\\u3053\\u3067\\u30cf\\u30c3\\u30ab\\u30fc\\u304c\\u518d\\u5165\\u3057\\u3088\\u3046\\u3068\\u3057\\u3066\\u3082\\u3001nonReentrant\\u304c\\u5f3e\\u304f\\uff01\\uff09\\n        (bool sent, ) = msg.sender.call{value: bal}(\\\"\\\");\\n        require(sent, \\\"Failed to send ETH\\\");\\n\\n        emit Withdraw(msg.sender, bal);\\n    }\\n\\n    /**\\n     * @notice \\u30b3\\u30f3\\u30c8\\u30e9\\u30af\\u30c8\\u304c\\u6301\\u3063\\u3066\\u3044\\u308b\\u7dcfETH\\u91cf\\u3092\\u78ba\\u8a8d\\u3059\\u308b\\u95a2\\u6570\\n     */\\n    function getBankBalance() public view returns (uint256) {\\n        return address(this).balance;\\n    }\\n}\\n\",\"keccak256\":\"0x3b4a30b457ec3c5403dc2a6e55aa934e5a439d9214ff7eb24423f40fc6dd8e86\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b506001600055610359806100246000396000f3fe60806040526004361061003f5760003560e01c806327e235e3146100445780633ccfd60b146100835780637b83b50b1461009a578063d0e30db0146100ad575b600080fd5b34801561005057600080fd5b5061007161005f3660046102cc565b60016020526000908152604090205481565b60405190815260200160405180910390f35b34801561008f57600080fd5b506100986100b5565b005b3480156100a657600080fd5b5047610071565b6100986101f7565b6100bd6102a2565b33600090815260016020526040902054806101185760405162461bcd60e51b81526020600482015260166024820152754e6f2062616c616e636520746f20776974686472617760501b60448201526064015b60405180910390fd5b336000818152600160205260408082208290555190919083908381818185875af1925050503d8060008114610169576040519150601f19603f3d011682016040523d82523d6000602084013e61016e565b606091505b50509050806101b45760405162461bcd60e51b815260206004820152601260248201527108cc2d2d8cac840e8de40e6cadcc8408aa8960731b604482015260640161010f565b60405182815233907f884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a94243649060200160405180910390a250506101f56001600055565b565b600034116102475760405162461bcd60e51b815260206004820152601c60248201527f4d757374206465706f736974206d6f7265207468616e20302045544800000000604482015260640161010f565b33600090815260016020526040812080543492906102669084906102fc565b909155505060405134815233907fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c9060200160405180910390a2565b6002600054036102c557604051633ee5aeb560e01b815260040160405180910390fd5b6002600055565b6000602082840312156102de57600080fd5b81356001600160a01b03811681146102f557600080fd5b9392505050565b8082018082111561031d57634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212202c65b097d1846fe00a3bf58c632aeb0da7322d13c5a30a9f083d98d50d15236c64736f6c634300081e0033",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c806327e235e3146100445780633ccfd60b146100835780637b83b50b1461009a578063d0e30db0146100ad575b600080fd5b34801561005057600080fd5b5061007161005f3660046102cc565b60016020526000908152604090205481565b60405190815260200160405180910390f35b34801561008f57600080fd5b506100986100b5565b005b3480156100a657600080fd5b5047610071565b6100986101f7565b6100bd6102a2565b33600090815260016020526040902054806101185760405162461bcd60e51b81526020600482015260166024820152754e6f2062616c616e636520746f20776974686472617760501b60448201526064015b60405180910390fd5b336000818152600160205260408082208290555190919083908381818185875af1925050503d8060008114610169576040519150601f19603f3d011682016040523d82523d6000602084013e61016e565b606091505b50509050806101b45760405162461bcd60e51b815260206004820152601260248201527108cc2d2d8cac840e8de40e6cadcc8408aa8960731b604482015260640161010f565b60405182815233907f884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a94243649060200160405180910390a250506101f56001600055565b565b600034116102475760405162461bcd60e51b815260206004820152601c60248201527f4d757374206465706f736974206d6f7265207468616e20302045544800000000604482015260640161010f565b33600090815260016020526040812080543492906102669084906102fc565b909155505060405134815233907fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c9060200160405180910390a2565b6002600054036102c557604051633ee5aeb560e01b815260040160405180910390fd5b6002600055565b6000602082840312156102de57600080fd5b81356001600160a01b03811681146102f557600080fd5b9392505050565b8082018082111561031d57634e487b7160e01b600052601160045260246000fd5b9291505056fea26469706673582212202c65b097d1846fe00a3bf58c632aeb0da7322d13c5a30a9f083d98d50d15236c64736f6c634300081e0033",
+  "devdoc": {
+    "details": "リエントランシー攻撃対策済みの安全な銀行コントラクト",
+    "errors": {
+      "ReentrancyGuardReentrantCall()": [
+        {
+          "details": "Unauthorized reentrant call."
+        }
+      ]
+    },
+    "kind": "dev",
+    "methods": {},
+    "title": "TandenBank",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "deposit()": {
+        "notice": "ETHを預ける関数"
+      },
+      "getBankBalance()": {
+        "notice": "コントラクトが持っている総ETH量を確認する関数"
+      },
+      "withdraw()": {
+        "notice": "預けたETHを全額引き出す関数 🛡️ nonReentrant修飾子をつけて再入攻撃をブロック！"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 10,
+        "contract": "contracts/TandenBank.sol:TandenBank",
+        "label": "_status",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 78,
+        "contract": "contracts/TandenBank.sol:TandenBank",
+        "label": "balances",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

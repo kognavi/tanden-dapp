@@ -15,7 +15,8 @@ import "hardhat/console.sol";
 contract YourContract {
     // State Variables
     address public immutable owner;
-    string public greeting = "Building Unstoppable Apps!!!";
+    string public greeting = "Hello, Blockchain World!";
+
     bool public premium = false;
     uint256 public totalCounter = 0;
     mapping(address => uint) public userGreetingCounter;
@@ -42,9 +43,13 @@ contract YourContract {
      *
      * @param _newGreeting (string memory) - new greeting to save on the contract
      */
-    function setGreeting(string memory _newGreeting) public payable {
+     function setGreeting(string memory _newGreeting) public payable {
+        // 🔥 【追加】ここ！ 0.01 ETH 未満なら門前払い！
+        require(msg.value >= 0.01 ether, "Not enough ETH! Pay 0.01 ETH!");
+
         // Print data to the hardhat chain console. Remove when deploying to a live network.
         console.log("Setting new greeting '%s' from %s", _newGreeting, msg.sender);
+
 
         // Change state variables
         greeting = _newGreeting;
