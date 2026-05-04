@@ -1,91 +1,145 @@
-# 🏗 Scaffold-ETH 2
+# 🔥 Tanden Power Meter | 丹田パワー測定器
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+> A Web3 dApp that measures and records your "Tanden Power" (core energy) on the Ethereum blockchain — mint NFTs and earn tokens as proof of your training.
+>
+> 丹田の力をブロックチェーンに刻み、NFTとトークンで証明するWeb3 dAppです。
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Network](https://img.shields.io/badge/network-Sepolia%20Testnet-orange.svg)
+![Built with](https://img.shields.io/badge/built%20with-Scaffold--ETH%202-blueviolet.svg)
+![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.x-363636.svg)
 
-> [!NOTE]
-> 🤖 Scaffold-ETH 2 is AI-ready! It has everything agents need to build on Ethereum. Check `.agents/`, `.claude/`, `.opencode` or `.cursor/` for more info.
+---
 
-⚙️ Built using NextJS, RainbowKit, Foundry/Hardhat, Wagmi, Viem, and Typescript.
+## 🌐 Live Demo
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+**▶ [https://tanden-dapp-nextjs.vercel.app](https://tanden-dapp-nextjs.vercel.app)**
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+> Connect MetaMask to **Sepolia Testnet** to try it out!
+> MetaMaskを **Sepoliaテストネット** に接続してお試しください！
 
-## Requirements
+---
 
-Before you begin, you need to install the following tools:
+## ✨ Features | 機能
 
-- [Node (>= v20.18.3)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+| Feature | Description |
+|---|---|
+| 🔥 **Power Measurement** | Record your Tanden Power (0–100%) on-chain |
+| 🏆 **NFT Minting** | Reach 100% to mint a "Tanden Master" NFT |
+| 🪙 **Token Rewards** | Earn TDN tokens for every training session |
+| 📊 **Score Tracking** | Cumulative score recorded on the blockchain |
+| 🔐 **Wallet Integration** | Connect via MetaMask / RainbowKit |
 
-## Quickstart
+---
 
-To get started with Scaffold-ETH 2, follow the steps below:
+## 🛠 Tech Stack | 技術スタック
 
-1. Install the latest version of Scaffold-ETH 2
+### Smart Contracts
+| Contract | Address (Sepolia) |
+|---|---|
+| `TandenBank` | `0x489CFa5FeE93a96782E95558fCFc19486605455D` |
 
+### Frontend & Infrastructure
 ```
-npx create-eth@latest
+Framework   : Next.js 15 (App Router)
+Web3        : Wagmi v2 + Viem + RainbowKit
+Scaffold    : Scaffold-ETH 2
+Language    : TypeScript
+Styling     : Tailwind CSS + DaisyUI
+Deploy      : Vercel
 ```
 
-This command will install all the necessary packages and dependencies, so it might take a while.
-
-> [!NOTE]
-> You can also initialize your project with one of our extensions to add specific features or starter-kits. Learn more in our [extensions documentation](https://docs.scaffoldeth.io/extensions/).
-
-2. Run a local network in the first terminal:
-
+### Blockchain
 ```
+Network     : Ethereum Sepolia Testnet
+Language    : Solidity ^0.8.x
+Token       : ERC-20 (TDN Token)
+NFT         : ERC-721 (Tanden Master NFT)
+```
+
+---
+
+## 🚀 Getting Started | ローカル起動手順
+
+### Prerequisites
+- Node.js >= v20.18.3
+- Yarn v1 or v2+
+- Git
+- MetaMask (browser extension)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/kognavi/tanden-dapp.git
+cd tanden-dapp
+
+# Install dependencies
+yarn install
+```
+
+### Run locally
+
+```bash
+# Terminal 1: Start local blockchain
 yarn chain
-```
 
-This command starts a local Ethereum network that runs on your local machine and can be used for testing and development. Learn how to [customize your network configuration](https://docs.scaffoldeth.io/quick-start/environment#1-initialize-a-local-blockchain).
-
-3. On a second terminal, deploy the test contract:
-
-```
+# Terminal 2: Deploy contracts
 yarn deploy
-```
 
-This command deploys a test smart contract to the local network. You can find more information about how to customize your contract and deployment script in our [documentation](https://docs.scaffoldeth.io/quick-start/environment#2-deploy-your-smart-contract).
-
-4. On a third terminal, start your NextJS app:
-
-```
+# Terminal 3: Start frontend
 yarn start
 ```
 
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
+Visit: [http://localhost:3000](http://localhost:3000)
 
-**What's next**:
+---
 
-Visit the [What's next section of our docs](https://docs.scaffoldeth.io/quick-start/environment#whats-next) to learn how to:
+## 📖 How to Use | 使い方
 
-- Edit your smart contracts
-- Edit your deployment scripts
-- Customize your frontend
-- Edit the app config
-- Writing and running tests
-- [Setting up external services and API keys](https://docs.scaffoldeth.io/deploying/deploy-smart-contracts#configuration-of-third-party-services-for-production-grade-apps)
+```
+1. Connect MetaMask to Sepolia Testnet
+   MetaMaskをSepoliaテストネットに接続
 
-## Documentation
+2. Click "丹田パワーを測定する！" button
+   ボタンを押して丹田パワーを測定
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn all the technical details and guides of Scaffold-ETH 2.
+3. Power reaches 100% → NFT is minted automatically!
+   パワーが100%に達するとNFTが自動ミント！
 
-To know more about its features, check out our [website](https://scaffoldeth.io).
+4. Earn TDN tokens for each session
+   セッションごとにTDNトークンを獲得
+```
 
-## Contributing to Scaffold-ETH 2
+---
 
-We welcome contributions to Scaffold-ETH 2!
+## 🔗 Contract Details | コントラクト詳細
 
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+- **Network:** Ethereum Sepolia Testnet
+- **Contract Address:** `0x489CFa5FeE93a96782E95558fCFc19486605455D`
+- **Explorer:** [View on Etherscan](https://sepolia.etherscan.io/address/0x489CFa5FeE93a96782E95558fCFc19486605455D)
+
+---
+
+## 🗺 Roadmap | 今後の展望
+
+- [ ] Mainnet deployment
+- [ ] Leaderboard (ranking system)
+- [ ] AI Agent integration for training advice
+- [ ] Mobile app (React Native)
+- [ ] DAO governance for Tanden Masters
+
+---
+
+## 👤 Author | 作者
+
+**kognavi**
+- GitHub: [@kognavi](https://github.com/kognavi)
+- Built as a Web3 portfolio project | Web3ポートフォリオとして開発
+
+---
+
+## 📄 License
+
+MIT License © 2026 kognavi
